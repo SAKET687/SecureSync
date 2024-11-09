@@ -1,0 +1,123 @@
+.profile-container {
+  background-color: #f0e6f6;
+  color: #4a148c;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+.profile-title {
+  color: #6200ea;
+  text-align: center;
+}
+
+.profile-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.profile-edit-btn, .profile-logout-btn, .profile-update-btn, .profile-cancel-btn {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.profile-edit-btn:hover, .profile-logout-btn:hover, .profile-update-btn:hover, .profile-cancel-btn:hover {
+  background-color: #4a148c;
+}
+
+.profile-edit-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+.popup-content h3 {
+  color: #6200ea;
+  margin-bottom: 20px;
+}
+
+.popup-content label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.popup-content button {
+  width: 48%;
+  margin: 5px 1%;
+}
+
+.profile-logout-btn {
+  background-color: #f44336;
+  margin-top: 10px;
+}
+
+.profile-logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .profile-title {
+    font-size: 1.6rem;
+  }
+
+  .profile-info {
+    padding: 15px;
+  }
+
+  .profile-edit-btn, .profile-logout-btn, .profile-update-btn, .profile-cancel-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .popup-content {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .popup-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .popup-content input {
+    padding: 10px;
+  }
+
+  .popup-content button {
+    width: 48%;
+  }
+}
